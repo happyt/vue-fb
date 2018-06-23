@@ -7,7 +7,12 @@ https://material.io/tools/icons/?style=baseline
 
 ## Build Setup
 
+
 ``` bash
+cd ..
+vue init vuetifyjs/webpack vue-fb
+cd vue-fb
+
 # install dependencies
 npm install
 
