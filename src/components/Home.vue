@@ -6,6 +6,7 @@
       </v-flex>
       <v-flex xs12 class="text-xs-center" mt-3>
         <p>This is a user's home page</p>
+        <p>xxx</p>
         <v-btn color="info" v-on:click.native="doSomething">Test</v-btn>
       </v-flex>
     </v-layout>
@@ -13,10 +14,17 @@
 </template>
 
 <script>
+import WordService from '@/services/WordService'
+
 export default {
+  data () {
+    return {
+      wordData: 'aa'
+    }
+  },
   methods: {
-    doSomething () {
-      console.log('clicked')
+    async doSomething () {
+
     }
   }
 }

@@ -39,7 +39,7 @@ npm i --save vuex
 npm audit   -- to check vulnerabilities
 
 npm i --save firebase
-
+npm i --save axios
 ```
 create fbconfig.js with auth properties, set hidden
 
@@ -47,3 +47,6 @@ Add
 - logo
 - page icon
 - theme
+- axios to read API
+- crud graphQL
+

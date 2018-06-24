@@ -13,3 +13,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 fbconfig.js
+axiosapi.js
