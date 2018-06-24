@@ -85,7 +85,8 @@ export default {
     menuItems () {
       if (this.isAuthenticated) {
         return [
-          { title: 'Home', path: '/home', icon: 'home' }
+          { title: 'Home', path: '/home', icon: 'home' },
+          { title: 'Options', path: '/options', icon: 'settings' }
         ]
       } else {
         return [
