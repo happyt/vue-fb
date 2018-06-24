@@ -6,7 +6,9 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import { store } from './store'
-import firebase from 'firebase/app'
+import * as firebase from 'firebase/app'
+import 'firebase/auth'
+import 'firebase/firestore'
 
 // Initialize Firebase
 var config = require(`../fbconfig.js`)

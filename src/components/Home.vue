@@ -6,7 +6,7 @@
       </v-flex>
       <v-flex xs12 class="text-xs-center" mt-3>
         <p>This is a user's home page</p>
-        <v-btn color="primary" v-on:click.native="doSomething">Swap theme</v-btn>
+        <v-btn color="info" v-on:click.native="doSomething">Test</v-btn>
       </v-flex>
     </v-layout>
   </v-container>
@@ -16,7 +16,7 @@
 export default {
   methods: {
     doSomething () {
-      this.$store.dispatch('swapDarkTheme', null)
+      console.log('clicked')
     }
   }
 }
