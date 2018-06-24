@@ -6,6 +6,13 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import { store } from './store'
+import firebase from 'firebase/app'
+
+// Initialize Firebase
+var config = require(`../fbconfig.js`)
+
+firebase
+  .initializeApp(config)
 
 Vue.use(Vuetify, { theme: {
   primary: '#ee44aa',
@@ -20,10 +27,18 @@ Vue.use(Vuetify, { theme: {
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  store,
-  components: { App },
-  template: '<App/>'
+const unsubscribe = firebase.auth()
+.onAuthStateChanged((firebaseUser) => {
+  new Vue({
+    el: '#app',
+    router,
+    store,
+    render: h => h(App),
+    created () {
+      if (firebaseUser) {
+        store.dispatch('autoSignIn', firebaseUser)
+      }
+    }
+  })
+  unsubscribe()
 })

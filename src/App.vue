@@ -11,6 +11,12 @@
           </v-list-tile-action>
           <v-list-tile-content>{{ item.title }}</v-list-tile-content>
         </v-list-tile>
+          <v-list-tile v-if="isAuthenticated" @click="userSignOut">
+          <v-list-tile-action>
+            <v-icon>exit_to_app</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>Sign Out</v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar app>
@@ -33,6 +39,10 @@
           <v-icon left dark>{{ item.icon }}</v-icon>
           {{ item.title }}
         </v-btn>
+        <v-btn flat v-if="isAuthenticated" @click="userSignOut">
+          <v-icon left>exit_to_app</v-icon>
+          Sign Out
+        </v-btn>
       </v-toolbar-items>
     </v-toolbar>
 
@@ -51,17 +61,32 @@
 export default {
   data () {
     return {
-      sidebar: false,
-      menuItems: [
-        { title: 'Home', path: '/home', icon: 'home' },
-        { title: 'Sign Up', path: '/signup', icon: 'face' },
-        { title: 'Sign In', path: '/signin', icon: 'lock_open' }
-      ]
+      sidebar: false
+    }
+  },
+  methods: {
+    userSignOut () {
+      this.$store.dispatch('userSignOut')
     }
   },
   computed: {
     appTitle () {
       return this.$store.state.appTitle
+    },
+    isAuthenticated () {
+      return this.$store.getters.isAuthenticated
+    },
+    menuItems () {
+      if (this.isAuthenticated) {
+        return [
+          { title: 'Home', path: '/home', icon: 'home' }
+        ]
+      } else {
+        return [
+          { title: 'Sign Up', path: '/signup', icon: 'face' },
+          { title: 'Sign In', path: '/signin', icon: 'lock_open' }
+        ]
+      }
     }
   }
 }
