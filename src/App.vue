@@ -26,7 +26,10 @@
       </span>
       <v-toolbar-title>
         <router-link to='/' tag='span' style='cursor: pointer'>
-          {{ appTitle }}
+          <img src="./assets/logo.png" height="38px" width="38px">
+          <span class='topline'>
+            {{ appTitle }}
+          </span>
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -91,3 +94,11 @@ export default {
   }
 }
 </script>
+<style>
+.topline {
+  color: rgb(24, 34, 122);
+  font-size: 28px;
+  line-height: 32px;
+  vertical-align: 20%;
+}
+</style>

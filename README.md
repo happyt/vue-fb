@@ -3,6 +3,8 @@
 > A Vue.js project
 from this demo, https://medium.com/@oleg.agapov/basic-single-page-application-using-vue-js-and-firebase-part-1-9e4c0c11a228
 
+NB Note the comments about updates in vuetify
+
 Part 2
 https://medium.com/@oleg.agapov/basic-single-page-application-using-vue-js-and-firebase-part-2-143a3084266f
 
@@ -10,7 +12,6 @@ Uses Material icons
 https://material.io/tools/icons/?style=baseline
 
 ## Build Setup
-
 
 ``` bash
 cd ..
@@ -42,3 +43,6 @@ npm i --save firebase
 ```
 create fbconfig.js with auth properties, set hidden
 
+Add
+- logo
+- page icon
