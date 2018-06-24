@@ -10,7 +10,8 @@ export const store = new Vuex.Store({
     appTitle: 'Firebase App',
     user: null,
     error: null,
-    loading: false
+    loading: false,
+    goDark: false
   },
   mutations: {
     setUser (state, payload) {
@@ -21,6 +22,9 @@ export const store = new Vuex.Store({
     },
     setLoading (state, payload) {
       state.loading = payload
+    },
+    setDarkTheme (state, payload) {
+      state.goDark = payload
     }
   },
   actions: {
@@ -60,11 +64,17 @@ export const store = new Vuex.Store({
       firebase.auth().signOut()
       commit('setUser', null)
       router.push('/')
+    },
+    swapDarkTheme ({commit}) {
+      commit('setDarkTheme', !this.state.goDark)
     }
   },
   getters: {
     isAuthenticated (state) {
       return state.user !== null && state.user !== undefined
+    },
+    isDark (state) {
+      return state.goDark
     }
   }
 })

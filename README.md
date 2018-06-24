@@ -46,3 +46,4 @@ create fbconfig.js with auth properties, set hidden
 Add
 - logo
 - page icon
+- theme

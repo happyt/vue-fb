@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :dark=setDark>
     <v-navigation-drawer fixed temporary v-model="sidebar" app>
       <v-list>
         <v-list-tile
@@ -76,6 +76,9 @@ export default {
     appTitle () {
       return this.$store.state.appTitle
     },
+    setDark () {
+      return this.$store.getters.isDark
+    },
     isAuthenticated () {
       return this.$store.getters.isAuthenticated
     },
@@ -96,7 +99,6 @@ export default {
 </script>
 <style>
 .topline {
-  color: rgb(24, 34, 122);
   font-size: 28px;
   line-height: 32px;
   vertical-align: 20%;
