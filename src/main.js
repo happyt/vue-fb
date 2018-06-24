@@ -29,7 +29,7 @@ Vue.use(Vuetify, { theme: {
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-const unsubscribe = firebase.auth()
+const subscribe = firebase.auth()
 .onAuthStateChanged((firebaseUser) => {
   new Vue({
     el: '#app',
@@ -42,5 +42,5 @@ const unsubscribe = firebase.auth()
       }
     }
   })
-  unsubscribe()
+  subscribe()
 })

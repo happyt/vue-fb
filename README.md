@@ -45,8 +45,11 @@ create fbconfig.js with auth properties, set hidden
 
 Add
 - logo
-- page icon
+- page icon - in static folder
 - theme
+- turn off text headings, just icons
 - axios to read API
+- firebase realtime feed
+- read API in store
 - crud graphQL
 

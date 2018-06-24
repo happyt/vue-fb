@@ -14,12 +14,9 @@
 </template>
 
 <script>
-import WordService from '@/services/WordService'
-
 export default {
   data () {
     return {
-      wordData: 'aa'
     }
   },
   methods: {
