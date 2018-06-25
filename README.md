@@ -47,9 +47,10 @@ Add
 - logo
 - page icon - in static folder
 - theme
+- list of items
 - turn off text headings, just icons
 - axios to read API
 - firebase realtime feed
 - read API in store
 - crud graphQL
-
+- dashboard, chart.js
