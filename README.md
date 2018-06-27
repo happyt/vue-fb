@@ -52,9 +52,16 @@ Add
 - list of items
 - turn off text headings, just icons
 - axios to read API
+- set up a Cloud Firestore DB
 - firebase realtime feed
+
+- useful data
+- check for nulls
+- vue-snotify
+- vue-draggable, https://github.com/SortableJS/Vue.Draggable
 
 - read API in store
 - realtime feed in store
+- add/update/delete through actions
 - crud graphQL
-- dashboard, chart.js
+- dashboard, chart.js, https://www.creative-tim.com/product/vue-paper-dashboard

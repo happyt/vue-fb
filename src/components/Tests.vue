@@ -30,7 +30,7 @@ export default {
       this.wordData = response.data.results[0].senses[0].definition
     },
     async doSomethingElse () {
-      const response = await WordService.getWord({ word: 'full' })
+      const response = await WordService.getWord({ word: 'empty' })
       this.wordData = response.data.results[0].senses[0].definition
     }
   }
