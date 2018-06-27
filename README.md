@@ -53,6 +53,8 @@ Add
 - turn off text headings, just icons
 - axios to read API
 - firebase realtime feed
+
 - read API in store
+- realtime feed in store
 - crud graphQL
 - dashboard, chart.js
