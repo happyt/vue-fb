@@ -40,8 +40,10 @@ npm audit   -- to check vulnerabilities
 
 npm i --save firebase
 npm i --save axios
+
 ```
 create fbconfig.js with auth properties, set hidden
+create axiosapi.js with credentials, set hidden
 
 Add
 - logo

@@ -16,6 +16,11 @@ var config = require(`../fbconfig.js`)
 firebase
   .initializeApp(config)
 
+export const db = firebase.firestore()
+
+const settings = {timestampsInSnapshots: true}
+db.settings(settings)
+
 Vue.use(Vuetify, { theme: {
   primary: '#ee44aa',
   secondary: '#424242',
@@ -37,6 +42,7 @@ const subscribe = firebase.auth()
     store,
     render: h => h(App),
     created () {
+      // console.log('user:', firebaseUser)
       if (firebaseUser) {
         store.dispatch('autoSignIn', firebaseUser)
       }

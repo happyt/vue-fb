@@ -6,6 +6,10 @@ import router from '@/router'
 
 Vue.use(Vuex)
 
+// firebase.database.ref().on('value', snapshot => {
+//   console.log(snapshot)
+// })
+
 export const store = new Vuex.Store({
   state: {
     appTitle: 'Firebase App',
@@ -47,7 +51,7 @@ export const store = new Vuex.Store({
       commit('setLoading', true)
       firebase.auth().signInWithEmailAndPassword(payload.email, payload.password)
       .then(firebaseUser => {
-        console.log(firebaseUser)
+        // console.log(firebaseUser)
         commit('setUser', {email: firebaseUser.email})
         commit('setLoading', false)
         commit('setError', null)
