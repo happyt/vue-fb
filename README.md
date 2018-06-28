@@ -40,7 +40,7 @@ npm audit   -- to check vulnerabilities
 
 npm i --save firebase
 npm i --save axios
-
+yarn add vue-snotify
 ```
 create fbconfig.js with auth properties, set hidden
 create axiosapi.js with credentials, set hidden
@@ -56,12 +56,13 @@ Add
 - firebase realtime feed
 
 - useful data
-- check for nulls
+- check for nulls, clear after, pop up Done
 - vue-snotify
 - vue-draggable, https://github.com/SortableJS/Vue.Draggable
 
 - read API in store
-- realtime feed in store
+- realtime feed in store - separate module
 - add/update/delete through actions
 - crud graphQL
-- dashboard, chart.js, https://www.creative-tim.com/product/vue-paper-dashboard
+- dashboard, chart.js, animated bubble chart
+- https://www.creative-tim.com/product/vue-paper-dashboard

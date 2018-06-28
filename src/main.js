@@ -9,6 +9,7 @@ import { store } from './store'
 import * as firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/firestore'
+import Toasted from 'vue-toasted'
 
 // Initialize Firebase
 var config = require(`../fbconfig.js`)
@@ -30,6 +31,8 @@ Vue.use(Vuetify, { theme: {
   success: '#4CAF50',
   warning: '#FFC107'
 }})
+
+Vue.use(Toasted)
 
 Vue.config.productionTip = false
 

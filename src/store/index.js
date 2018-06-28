@@ -12,7 +12,7 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
   state: {
-    appTitle: 'Firebase App',
+    appTitle: 'SPA - Firebase',
     user: null,
     error: null,
     loading: false,
@@ -72,6 +72,9 @@ export const store = new Vuex.Store({
     },
     swapDarkTheme ({commit}) {
       commit('setDarkTheme', !this.state.goDark)
+    },
+    raiseEvent () {
+
     }
   },
   getters: {
