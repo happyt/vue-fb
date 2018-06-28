@@ -67,7 +67,6 @@ export default {
   },
   methods: {
     async doSomething () {
-      this.$toasted.clear()
       this.$toasted.show('hello billo', {icon: 'check', duration: 2000})
     }
   }
