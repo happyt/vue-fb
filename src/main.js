@@ -32,7 +32,7 @@ Vue.use(Vuetify, { theme: {
   warning: '#FFC107'
 }})
 
-Vue.use(Toasted)
+Vue.use(Toasted, {router})
 
 Vue.config.productionTip = false
 

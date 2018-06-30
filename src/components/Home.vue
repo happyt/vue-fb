@@ -67,8 +67,30 @@ export default {
   },
   methods: {
     async doSomething () {
-      this.$toasted.show('update billo', {icon: 'check', duration: 2000})
-    }
+      this.$toasted.show('hello billo', {
+          action: [
+            {
+              text: 'Cancel',
+              onClick: (e, toastObject) => {
+                toastObject.goAway(0)
+              }
+            },
+            {
+              text: 'Undo',
+              // router navigation
+              push: {
+                name: '/options',
+                // thise will prevent toast from closing
+                dontClose: true
+              }
+            }
+          ],
+          type: 'error',
+          theme: 'bubble',
+          icon: 'check',
+          duration: 4000
+        })    
+      }
   }
 }
 </script>
