@@ -42,8 +42,10 @@ npm i --save firebase
 npm i --save axios
 
 yarn add vue-toasted
+
 yarn add vuedraggable
 
+yarn add vue-chartjs chart.js
 
 ```
 create fbconfig.js with auth properties, set hidden
