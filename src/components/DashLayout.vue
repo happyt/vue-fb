@@ -5,9 +5,9 @@
             <div class="grid-row1a">
                 <div class="red white--text">TOP MESSAGES</div>
                 <div class="grid-row1a-cols">
-                    <div class="yellow">xxx</div>
-                    <div class="cyan">xxx</div>
-                    <div class="green">xxx</div>
+                    <div class="white"><my-doughnut-chart /></div>
+                    <div class="white"><my-chart /></div>
+                    <div class="white"><my-bubble-chart/></div>
                 </div>
                 
             </div>
@@ -33,13 +33,15 @@ import PlaceCard from './PlaceCard'
 import MyChart from './Charts/MyChart'
 import MyLine from './Charts/MyLine'
 import MyBubble from './Charts/MyBubble'
+import MyDoughnut from './Charts/MyDoughnut'
 
 export default {
   components: {
     'place-card': PlaceCard,
     'my-chart': MyChart,
     'my-line-chart': MyLine,
-    'my-bubble-chart': MyBubble
+    'my-bubble-chart': MyBubble,
+    'my-doughnut-chart': MyDoughnut
   },
   data () {
     return {
@@ -63,7 +65,7 @@ export default {
 }
 .grid-container {
   display: grid;
-  height: 85vh;
+  height: 88vh;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 3fr 1fr;
   grid-template-areas: "." "." ".";
