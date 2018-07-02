@@ -1,11 +1,11 @@
 <script>
-import {Doughnut} from 'vue-chartjs'
+import {Pie} from 'vue-chartjs'
 
 export default {
-  extends: Doughnut,
+  extends: Pie,
   mounted () {
     this.renderChart({
-      type: 'doughnut',
+      type: 'pie',
       data: {
         datasets: [{
           data: [10, 20, 30]

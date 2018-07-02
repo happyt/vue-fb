@@ -74,3 +74,6 @@ Add
 - crud graphQL
 - dashboard, chart.js, animated bubble chart
 - https://www.creative-tim.com/product/vue-paper-dashboard
+
+
+try https://www.chartkick.com/vue ?
