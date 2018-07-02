@@ -9,6 +9,10 @@
         <v-btn color="primary" v-on:click.native="doSomething">Swap Dark</v-btn>
         <v-btn color="accent" to="/tests">Tests page</v-btn>
         <v-btn color="accent" to="/addItem">Add item</v-btn>
+      </v-flex>      
+      <v-flex xs12 class="text-xs-center" mt-3>
+        <v-btn color="accent" to="/lists">Lists page</v-btn>
+        <v-btn color="accent" to="/dashboard">Dashboard page</v-btn>
       </v-flex>
     </v-layout>
   </v-container>

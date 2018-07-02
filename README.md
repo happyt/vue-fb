@@ -40,7 +40,11 @@ npm audit   -- to check vulnerabilities
 
 npm i --save firebase
 npm i --save axios
+
 yarn add vue-toasted
+yarn add vuedraggable
+
+
 ```
 create fbconfig.js with auth properties, set hidden
 create axiosapi.js with credentials, set hidden
@@ -56,10 +60,12 @@ Add
 - firebase realtime feed
 - vue-toasted
 
-- add/update/delete through actions
-- useful data
 - check for nulls, clear after, pop up Done
 - vue-draggable, https://github.com/SortableJS/Vue.Draggable
+
+- draggable needs save/load from db, with ordering
+- add/update/delete through actions
+- useful data
 
 - read API in store
 - realtime feed in store - separate module

@@ -80,9 +80,9 @@ export default {
         .then((docRef) => {
           console.log('Document written with ID: ', docRef.id)
           this.$toasted.show('Updated', {type: 'success', icon: 'check', duration: 2000})
-          this.name=""
-          this.value=""
-          this.tempo=""
+          this.name = ''
+          this.value = ''
+          this.tempo = ''
         })
         .catch((error) => {
           console.error('Error adding document: ', error)
