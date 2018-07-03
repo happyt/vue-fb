@@ -65,15 +65,21 @@ Add
 - check for nulls, clear after, pop up Done
 - vue-draggable, https://github.com/SortableJS/Vue.Draggable
 
-- draggable needs save/load from db, with ordering
+- dashboard, chart.js, animated bubble chart
+-     look at - resize, text sizes, putting in data connection
+
+- draggable needs save/load from db, with ordering, 
+-        check drag between order
 - add/update/delete through actions
 - useful data
 
+- reaction to resize
 - read API in store
 - realtime feed in store - separate module
 - crud graphQL
-- dashboard, chart.js, animated bubble chart
 - https://www.creative-tim.com/product/vue-paper-dashboard
 
+- animation in a canvas, eg radar display
+- log connection to messages
 
 try https://www.chartkick.com/vue ?

@@ -6,18 +6,12 @@ export default {
   mounted () {
     this.renderChart({
       type: 'doughnut',
-      data: {
-        datasets: [{
-          data: [10, 20, 30]
-        }],
-
-    // These labels appear in the legend and in the tooltips
-        labels: [
-          'Red',
-          'Yellow',
-          'Blue'
-        ]
-      }
+      datasets: [{
+        label: 'Population',
+        backgroundColor: ['#3e95cd', '#8e5ea2', '#3cba9f', '#e8c3b9', '#c45850'],
+        data: [2478, 5267, 734, 784, 433]
+      }],
+      labels: ['Africa', 'Asia', 'Europe', 'Latin America', 'North America']
     })
   }
 }

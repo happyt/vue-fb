@@ -55,14 +55,14 @@
 <script>
 
 import PlaceCard from './PlaceCard'
-import MyChart from './Charts/MyChart'
+import MyBar from './Charts/MyBar'
 import MyLine from './Charts/MyLine'
 import MyBubble from './Charts/MyBubble'
 
 export default {
   components: {
     'place-card': PlaceCard,
-    'my-chart': MyChart,
+    'my-bar-chart': MyBar,
     'my-line-chart': MyLine,
     'my-bubble-chart': MyBubble
   },

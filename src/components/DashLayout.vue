@@ -5,13 +5,13 @@
             <div class="grid-row1a">
                 <div class="red white--text">TOP MESSAGES</div>
                 <div class="grid-row1a-cols">
-                    <div class="white"><my-chart /></div>
-                    <div class="white"><my-chart /></div>
+                    <div class="white"><my-doughnut-chart /></div>
+                    <div class="white"><my-bar-chart /></div>
                     <div class="white"><my-bubble-chart /></div>
                 </div>
                 
             </div>
-            <div class="blue">xxx</div>
+            <div class="blue"><place-card /></div>
         </div>
         <div class="grid-row2-cols">
             <div class="pink">pink</div>
@@ -30,7 +30,7 @@
 <script>
 
 import PlaceCard from './PlaceCard'
-import MyChart from './Charts/MyChart'
+import MyBar from './Charts/MyBar'
 import MyLine from './Charts/MyLine'
 import MyBubble from './Charts/MyBubble'
 import MyDoughnut from './Charts/MyDoughnut'
@@ -39,7 +39,7 @@ import MyPie from './Charts/MyPie'
 export default {
   components: {
     'place-card': PlaceCard,
-    'my-chart': MyChart,
+    'my-bar-chart': MyBar,
     'my-line-chart': MyLine,
     'my-bubble-chart': MyBubble,
     'my-doughnut-chart': MyDoughnut,

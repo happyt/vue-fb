@@ -15,10 +15,25 @@ export default {
           borderColor: '#ffffff',
           pointStyle: 'circle',
           data: [
-            { x: 21, y: 31, r: 13 },
-            { x: 11, y: 12, r: 15 },
-            { x: 34, y: 4, r: 6 },
-            { x: 5, y: 17, r: 3 }
+            { x: 21, y: 31, r: 53 },
+            { x: 11, y: 12, r: 35 },
+            { x: 34, y: 4, r: 60 },
+            { x: 40, y: 24, r: 76 },
+            { x: 34, y: 4, r: 56 },
+            { x: 15, y: 17, r: 13 }
+          ]
+        }, {
+          label: 'Huge hits',
+          backgroundColor: '#f85544',
+          borderColor: '#ffffff',
+          pointStyle: 'circle',
+          data: [
+            { x: 31, y: 34, r: 43 },
+            { x: 41, y: 22, r: 33 },
+            { x: 24, y: 44, r: 20 },
+            { x: 10, y: 28, r: 56 },
+            { x: 4, y: 14, r: 18 },
+            { x: 23, y: 27, r: 13 }
           ]
         }
       ]
