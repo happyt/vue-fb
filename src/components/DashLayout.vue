@@ -6,7 +6,7 @@
                 <div class="red white--text">TOP MESSAGES</div>
                 <div class="grid-row1a-cols">
                     <div class="white"><my-doughnut-chart /></div>
-                    <div class="white"><my-bar-chart /></div>
+                    <div class="white"><pie-chart :data="chartData"></pie-chart></div>
                     <div class="white"><my-bubble-chart /></div>
                 </div>
                 
@@ -14,10 +14,14 @@
             <div class="blue"><place-card /></div>
         </div>
         <div class="grid-row2-cols">
-            <div class="pink">pink</div>
+            <div class="white">
+              <column-chart :data="bardata"></column-chart>
+            </div>
             <div class="yellow">yellow</div>
         </div>
-        <div class="green">Green</div>
+        <div class="green">
+          xxxx
+        </div>
     </div>
     <v-footer class="footing" color="info">
         <v-flex xs12 class="text-xs-center white--text">
@@ -47,7 +51,14 @@ export default {
   },
   data () {
     return {
-      lorem: `Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum`
+      lorem: `Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum`,
+      chartData: [['Jan', 44], ['Feb', 27], ['Mar', 60], ['Apr', 55], ['May', 37], ['Jun', 40], ['Jul', 69], ['Aug', 33], ['Sept', 76], ['Oct', 90], ['Nov', 34], ['Dec', 22]],
+      bardata: [
+      ['a', 12], ['b', 23], ['c', 34], ['d', 34], ['e', 45], ['f', 12], ['g', 23], ['h', 13],
+      ['i', 12], ['j', 23], ['k', 34], ['l', 34], ['m', 45], ['n', 12], ['o', 23], ['p', 13],
+      ['q', 12], ['r', 23], ['s', 34], ['t', 34], ['u', 45], ['v', 12], ['w', 23], ['x', 13],
+      ['y', 12], ['z', 23], ['1', 34], ['2', 34], ['3', 45], ['4', 12], ['5', 23], ['6', 13]
+      ]
     }
   },
   methods: {

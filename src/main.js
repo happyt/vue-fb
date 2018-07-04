@@ -10,6 +10,8 @@ import * as firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/firestore'
 import Toasted from 'vue-toasted'
+import VueChartkick from 'vue-chartkick'
+import Chart from 'chart.js'
 
 // Initialize Firebase
 var config = require(`../fbconfig.js`)
@@ -33,6 +35,7 @@ Vue.use(Vuetify, { theme: {
 }})
 
 Vue.use(Toasted, {router})
+Vue.use(VueChartkick, {adapter: Chart})
 
 Vue.config.productionTip = false
 
