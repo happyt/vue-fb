@@ -65,7 +65,9 @@ Add
 - check for nulls, clear after, pop up Done
 - vue-draggable, https://github.com/SortableJS/Vue.Draggable
 
-- dashboard, chart.js, animated bubble chart
+- dashboard, chart.js, 
+-     eg http://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/
+-     animated bubble chart
 -     look at - resize, text sizes, putting in data connection
 
 - draggable needs save/load from db, with ordering, 

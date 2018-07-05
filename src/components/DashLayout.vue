@@ -3,7 +3,9 @@
     <div  class="grid-container">
         <div class="grid-row1">
             <div class="grid-row1a">
-                <div class="red white--text">TOP MESSAGES</div>
+                <div class="red white--text">
+                  <h1>TOP MESSAGES</h1>
+                </div>
                 <div class="grid-row1a-cols">
                     <div class="white"><my-doughnut-chart /></div>
                     <div class="white"><pie-chart :data="chartData"></pie-chart></div>
