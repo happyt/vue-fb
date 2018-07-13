@@ -1,5 +1,7 @@
 # vue-fb
 
+This is just a hackspace for some Vue experiments, so don't look for coherence or a nicely finished product.
+
 > A Vue.js project
 from this demo, https://medium.com/@oleg.agapov/basic-single-page-application-using-vue-js-and-firebase-part-1-9e4c0c11a228
 
@@ -65,23 +67,16 @@ Add
 - check for nulls, clear after, pop up Done
 - vue-draggable, https://github.com/SortableJS/Vue.Draggable
 
-- dashboard, chart.js, 
--     eg http://tobiasahlin.com/blog/chartjs-charts-to-get-you-started/
--     animated bubble chart
--     look at - resize, text sizes, putting in data connection
-
-- draggable needs save/load from db, with ordering, 
--        check drag between order
+- draggable needs save/load from db, with ordering
 - add/update/delete through actions
 - useful data
 
-- reaction to resize
 - read API in store
 - realtime feed in store - separate module
 - crud graphQL
+- dashboard, chart.js, animated bubble chart
 - https://www.creative-tim.com/product/vue-paper-dashboard
 
-- animation in a canvas, eg radar display
-- log connection to messages
 
 try https://www.chartkick.com/vue ?
+google charts?

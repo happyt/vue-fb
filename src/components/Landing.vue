@@ -11,17 +11,31 @@
         <img src="@/assets/vuex-flow.png" alt="Vuex flow" class="mb-5">
       </v-flex>
     </v-layout>
+    <section id="screen">Screen section</section>
   </v-container>
 </template>
 
 <script>
-export default {}
+
+CSS.paintWorklet.addModule('http://localhost:8080/static/scripts/patternWorklet.js')
+
+export default {
+
+}
 </script>
 <style>
+#screen {
+  box-sizing: border-box;
+  margin: 10px; padding: 0px;
+  width: calc(50vw);
+  height: calc(10vh);
+  background-color: #111;
+  background-image: paint(awesomePattern);
+}
+
 img {
   max-width:100%;
   height:auto;
   max-height:100%;
   }
 </style>
-<!-- License information for this page may be viewed at https://static.bbc.co.uk/onesport/2.11.612/licenses.txt -->

@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "chart.js": "^2.7.2",
+    "chartkick": "^2.3.6",
     "firebase": "^5.1.0",
     "vue": "^2.5.2",
     "vue-chartjs": "^3.3.2",
