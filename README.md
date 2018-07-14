@@ -70,6 +70,9 @@ Add
 - draggable needs save/load from db, with ordering
 - add/update/delete through actions
 - useful data
+- added css paint to Loading screen
+
+
 
 - read API in store
 - realtime feed in store - separate module
@@ -80,3 +83,4 @@ Add
 
 try https://www.chartkick.com/vue ?
 google charts?
+
