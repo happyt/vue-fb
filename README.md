@@ -84,3 +84,5 @@ Add
 try https://www.chartkick.com/vue ?
 google charts?
 
+add some inky to it?
+or p5 perhaps for a small game, or demo
