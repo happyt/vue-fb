@@ -86,3 +86,4 @@ google charts?
 
 add some inky to it?
 or p5 perhaps for a small game, or demo
+https://dustinpfister.github.io/2018/01/10/nodejs-axios/
