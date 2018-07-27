@@ -60,9 +60,40 @@ export default {
     },
     clickStop: function () {
       this.incr = 0
+    },
+    clickLeft: function () {
+      console.log('left')
+      this.incr -= 0.1
+    },
+    clickRight: function () {
+      console.log('right')
+      this.incr += 0.1
     }
   },
   mounted () {
+    window.addEventListener('keypress', e => {
+      let text = ''
+      switch (e.key) {
+        case 'w':
+          text = 'Forward'
+          break
+        case 'a':
+          this.clickLeft()
+          text = 'Left'
+          break
+        case 's':
+          text = 'Back'
+          break
+        case 'd':
+          this.clickRight()
+          text = 'Right'
+          break
+        default:
+          text = 'What...?'
+      }
+      console.log(text)
+ //     console.log(text, String.fromCharCode(e.keyCode))
+    })
     this.init()
     this.animate()
   }
