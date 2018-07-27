@@ -2,10 +2,16 @@
   <v-container fluid>
     <v-layout row wrap>
       <v-flex xs12 class="text-xs-center" mt-5>
-        <h1>Error - page not found</h1>
-        <div id='three'></div>
+        <h1>Oops - we cannot find that page!</h1>
+        <div id='three'>
+          <v-btn color="warning" class='black--text' v-on:click.native=clicker>
+            Action</v-btn>
+          <v-btn color="warning" class='black--text' v-on:click.native=clickStop>
+            Stop</v-btn>
+        </div>
       </v-flex>
     </v-layout>
+     
   </v-container>
 </template>
 
@@ -19,7 +25,8 @@ export default {
       camera: null,
       scene: null,
       renderer: null,
-      mesh: null
+      mesh: null,
+      incr: 0.01
     }
   },
   methods: {
@@ -38,14 +45,21 @@ export default {
       this.scene.add(this.mesh)
 
       this.renderer = new Three.WebGLRenderer({antialias: true})
+      console.log(container.clientWidth, container.clientHeight)
       this.renderer.setSize(container.clientWidth, container.clientHeight)
       container.appendChild(this.renderer.domElement)
     },
     animate: function () {
       requestAnimationFrame(this.animate)
-      this.mesh.rotation.x += 0.01
-      this.mesh.rotation.y += 0.02
+      // this.mesh.rotation.x += this.incr
+      this.mesh.rotation.y += this.incr
       this.renderer.render(this.scene, this.camera)
+    },
+    clicker: function () {
+      this.incr += 0.12
+    },
+    clickStop: function () {
+      this.incr = 0
     }
   },
   mounted () {
@@ -54,3 +68,15 @@ export default {
   }
 }
 </script>
+<style>
+  canvas {
+    border: rgba(255, 0, 0, 0.514);
+    border-width: 1em;
+    border-radius: 20px;
+}
+#three {
+  width: 50pc;
+  height: 30pc;
+  margin: auto;
+}
+</style>
