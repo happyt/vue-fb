@@ -71,7 +71,7 @@ Add
 - add/update/delete through actions
 - useful data
 - added css paint to Loading screen
-
+- yarn add three, add demo to Not Found page
 
 
 - read API in store
