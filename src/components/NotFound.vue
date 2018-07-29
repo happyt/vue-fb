@@ -26,7 +26,8 @@ export default {
       scene: null,
       renderer: null,
       mesh: null,
-      incr: 0.01
+      incrX: 0.01,
+      incrY: 0.01
     }
   },
   methods: {
@@ -51,15 +52,15 @@ export default {
     },
     animate: function () {
       requestAnimationFrame(this.animate)
-      // this.mesh.rotation.x += this.incr
-      this.mesh.rotation.y += this.incr
+      this.mesh.rotation.x += this.incrX
+      this.mesh.rotation.y += this.incrY
       this.renderer.render(this.scene, this.camera)
     },
     clicker: function () {
-      this.incr += 0.12
+      this.incrX += 0.12
     },
     clickStop: function () {
-      this.incr = 0
+      this.incrX = 0
     },
     clickLeft: function () {
       console.log('left')
@@ -76,17 +77,21 @@ export default {
       switch (e.key) {
         case 'w':
           text = 'Forward'
+          this.incrY -= 0.1
           break
         case 'a':
           this.clickLeft()
           text = 'Left'
+          this.incrX -= 0.1
           break
         case 's':
           text = 'Back'
+          this.incrY += 0.1
           break
         case 'd':
           this.clickRight()
           text = 'Right'
+          this.incrX += 0.1
           break
         default:
           text = 'What...?'
